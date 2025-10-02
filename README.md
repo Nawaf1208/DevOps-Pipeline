@@ -36,6 +36,7 @@ cd apps/sample-app && docker-compose up -d
 
 # Start Registry
 cd registry && docker-compose up -d
+```
 
 Access Services
 Jenkins: http://localhost:8080
