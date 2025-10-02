@@ -49,9 +49,10 @@ Sample App: http://localhost:3000
 
 Registry: http://localhost:5000/v2/_catalog
 
-Jenkins Setup
+``` Jenkins Setup
 Get initial admin password:
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+```
 
 ## 🔧 Configuration 
 Copy and update configuration templates from config-templates/ directory.
