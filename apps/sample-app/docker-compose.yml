@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  sample-app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - APP_VERSION=1.0.0
+    restart: unless-stopped
