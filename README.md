@@ -1,5 +1,7 @@
 # Complete DevOps Pipeline
 
+![](DevOps-Pipeline.png)
+
 A complete CI/CD pipeline using Jenkins, Docker, Prometheus, and Grafana.
 
 ## 🚀 Features
