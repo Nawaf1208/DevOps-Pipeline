@@ -10,6 +10,19 @@
 
 A complete CI/CD pipeline using Jenkins, Docker, Prometheus, and Grafana.
 
+## Application & Runtime
+
+![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+## Container Registry
+
+![Docker](https://img.shields.io/badge/Docker_Registry-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+
+## Version Control
+
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+
 ## 🚀 Features
 
 - **CI/CD**: Jenkins pipeline for automated builds and deployments
@@ -17,6 +30,10 @@ A complete CI/CD pipeline using Jenkins, Docker, Prometheus, and Grafana.
 - **Monitoring**: Prometheus for metrics collection
 - **Visualization**: Grafana for dashboards and alerts
 - **Registry**: Private Docker registry for images
+
+## 📋 Prerequisites
+- **Docker & Docker Compose**
+- **Git**
 
 ## 📁 Project Structure
 
@@ -46,16 +63,12 @@ cd apps/sample-app && docker-compose up -d
 cd registry && docker-compose up -d
 ```
 
-Access Services
-Jenkins: http://localhost:8080
-
-Grafana: http://localhost:3001 (admin/admin123)
-
-Prometheus: http://localhost:9090
-
-Sample App: http://localhost:3000
-
-Registry: http://localhost:5000/v2/_catalog
+## Access Services
+- **Jenkins**: http://localhost:8080
+- **Grafana**: http://localhost:3001 (admin/admin123)
+- **Prometheus**: http://localhost:9090
+- **Sample App**: http://localhost:3000
+- **Registry**: http://localhost:5000/v2/_catalog
 
 ``` Jenkins Setup
 Get initial admin password:
@@ -63,9 +76,13 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
 ## 🔧 Configuration 
-Copy and update configuration templates from config-templates/ directory.
+**Copy and update configuration templates from config-templates/ directory.**
 
 ## 📊 Monitoring
-Import dashboards in Grafana
+**Import dashboards in Grafana**
 
+## 🐛 Troubleshooting
+- **Port conflicts**: Check if ports 8080, 3000, 3001, 9090, 5000 are available
+- **Jenkins plugins**: Ensure required plugins are installed (Docker, Pipeline, GitHub)
+- **Registry access**: Use `docker login localhost:5000` for private registry access
 
